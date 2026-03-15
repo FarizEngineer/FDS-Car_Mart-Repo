@@ -23,35 +23,52 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container mt-3">
         <div class="box">
             <div class="log text-center">
-                <div class="row mt-3"><div class="col-md-12"><h2>Login Form</h2></div></div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><h2  style="color: gray;">Login Form</h2></div></div>
                 <div class="row mt-4">
                 <div class="col-md-12"><input type="text" placeholder="Enter your valid email ..."></div>
                 </div>
                 <div class="row mt-4">
                 <div class="col-md-12"><input type="password" placeholder="Enter your Password ..."></div>
                 </div>
-                <div class="row mt-4 mb-2">
-                    <div class="col-md-12"><button><h5>Login now</h5></button></div>
+                <div class="row mt-4 mb-3">
+                    <div class="col-md-12"><button type="button" class="btn btn-outline-secondary">Log In Now</button></div>
                 </div>
             </div>
-
-            <div class="sign text-center">
-                <div class="row mt-3"><h2>Sign in form</h2></div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><label for="email">Email:</label><input type="text" placeholder="Enter your valid email here..."></div>
-                    <div class="col-md-6"><label for="password">Password:</label><input type="password" placeholder="Enter your password here..."></div>
-                </div>
-                <div class="row mt-4 mb-2">
-                    <div class="col-md-12"><button><h5>Login now</h5></button></div>
-                </div>
+            </div>
+        </div>
+<!-- Login work end -->
+        <div class="container mt-3">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>----- OR -----</h1>
+                    <br>
+                    <h1>Create a new account</h1>
                 </div>
             </div>
         </div>
-    </div>
-
-
+    <!-- Sign in form -->
+<div class="container mb-2">
+    <div class="sign text-center mt-3">
+                <div class="row mt-3"><h2 style="color: gray;">Registration form</h2></div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><label for="name"  style="color: gray;">Name :</label><input type="text" id="regname" placeholder="Enter your full name..."></div>
+                    <div class="col-md-6"><label for="email" style="color: gray;">Email :</label><input type="text" id="regmail" placeholder="Enter your valid email..."></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6"><label for="Password"  style="color: gray;">Password :</label><input type="password" id="regpass" placeholder="Enter your password..."></div>
+                    <div class="col-md-6"><label for="password" style="color: gray;">Confirm Password :</label><input type="password" id="regconfirm" placeholder="Confirm your password..."></div>
+                </div>
+                <div class="row mt-4 mb-3">
+                    <div class="col-md-12"> 
+                       <button type="button" class="btn btn-outline-secondary" onclick="reg()">Register Now</button>
+                    </div>
+                </div>
+                </div>
+</div>
+   <script src="Logic.js"></script>
 </body>
 </html>

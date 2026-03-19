@@ -4,9 +4,21 @@ let Regname = document.getElementById("regname").value
 let Regmail =  document.getElementById("regmail").value
 let Regpass =  document.getElementById("regpass").value
 let Regconpass =  document.getElementById("regconfirm").value
-// Condition
-if(Regname == "" || Regmail=="" || Regpass=="" || Regconpass==""){
+// Conditions
+if(Regname == "" && Regmail=="" && Regpass=="" && Regconpass==""){
     alert(`Pls fill out all fields...`)
+}
+else if(Regname == ""){
+    document.getElementById("namevalid").innerText="Pls, enter your name here ☺️"
+}
+else if(Regmail == ""){
+    document.getElementById("emailvalid").innerText="Pls, enter your valid email address here ☺️"
+}
+else if(Regpass == ""){
+    document.getElementById("passvalid").innerText="Pls, enter your correct password here ☺️"
+}
+else if(Regconpass == ""){
+    document.getElementById("conpassvalid").innerText="Pls, Confirm your correct password here ☺️"
 }
 else if(Regpass != Regconpass){
     alert(`Your password does'nt match...!`)
@@ -29,4 +41,13 @@ else{
 }
 
             }
+
+ // Visiting work
+function visitsite(){
+    localStorage.setItem("username" , "Guest")
+    localStorage.setItem("usermail" , "No Email")
+
+    window.location.href="index.html"
+}
+
 

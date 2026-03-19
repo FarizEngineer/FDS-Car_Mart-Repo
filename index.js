@@ -78,3 +78,11 @@ for(i=0; i<cards.length; i++ ){
 document.write(`     
     </div>
 </div>`)
+
+// Account Work
+let username=localStorage.getItem("username")
+let usermail=localStorage.getItem("usermail")
+
+document.getElementById(`uname`).innerHTML=username
+document.getElementById(`umail`).innerHTML=usermail
+

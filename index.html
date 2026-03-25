@@ -50,23 +50,31 @@
       border: 2px solid white;
     }
     .gapbox{
-      border: 2px solid white;
+      border: 2px solid black;
     }
    .video {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Adjust to your row height, e.g., 400px */
+  height: 100%;
   padding: 20px;
 }
 
 #Video {
   max-width: 90%;
   height: auto;
-  border-radius: 10px; /* Optional: rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add shadow for prominence */
+  border:3px solid white;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-
+.infobtn{
+  padding: 16px;
+   border-radius: 10px; 
+}
+#webvideo{
+  max-height: 100%;
+  max-width :100%;
+}
     </style>
 </head>
 <body>
@@ -139,15 +147,18 @@
 </nav>
 <!-- Navbar end -->
 <!-- Gap start -->
- <div class="container"><div class="gapbox mt-5"><h2>Just for Space</h2></div></div>
+ <div class="container"><div class="gapbox mt-5"><h2>Just for Space</h2><br></div></div>
 <!-- Gap end -->
 
 <!-- Banner start -->
  <div class="container-fluid">
+  <div class="box">
   <div class="row mt-3">
-    <div class="box">
-<div class="col-md-6"><h1 class="mt-3">Welcome</h1><br><h2>Fariz Digital Studio</h2><h5 class="mb-3">Premium cars here...</h5></div>
-<div class="col-md-6">
+<div class="col-md-6"><h1 class="mt-5 ms-5" style="color: white; font-family:Times new roman;">-- Welcome to </h1>
+  <br><h2 class="ms-5"  style="color: white; font-family:Times new roman;">--- Fariz Digital Studio 🚘 ---</h2>
+  <h5 class="mb-3 ms-5"  style="color: white; font-family:Georgia; font-style: italic;">---- Premium cars here... ---</h5>
+  <br><button type="button" href="about.html" class="btn btn-outline-light infobtn ms-5">You want to know about us more?<br><h5>--- Just click here...👍 ---</h5></button></div>
+<div class="col-md-6 text-center">
   <div class="video">
     <video autoplay muted loop playsinline id="Video">
       <source src="pics/banner drifting car video.mp4" type="video/mp4">
@@ -159,6 +170,35 @@
   </div>
  </div>
 <!-- Banner end -->
+
+<!-- Videos work start -->
+
+ <div class="container">
+  <!-- card 1 -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+ </div>
+
+<!-- Videos work end -->
    
 
 <script src="index.js">

@@ -58,11 +58,11 @@ let cards=[
 
 document.write(`  
 <div class="container-fluid">
-    <div class="row mt-4 mb-5">`)
+    <div class="row">`)
 for(i=0; i<cards.length; i++ ){
     document.write(`
         <div class="col-md-4">
-        <div class="card">
+        <div class="card mt-5 mb-2">
         <img src="${cards[i].img}" class="card-img-top crdimg" alt="...">
   <div class="card-body">
     <h5 class="card-title">${cards[i].name}</h5>

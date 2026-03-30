@@ -67,7 +67,10 @@ for(i=0; i<cards.length; i++ ){
   <div class="card-body">
     <h5 class="card-title">${cards[i].name}</h5>
     <p class="card-text">${cards[i].des}</p>
-    <a href="det.html?id=${cards[i].id}" class="btn btn-primary">Go somewhere</a>
+    <div class="text-center">
+  <a href="det.html?id=${cards[i].id}" class="btn btn-outline-success me-5">Buy now</a>
+    <a onclick="atc()" class="btn btn-outline-info ms-5">Add to cart</a>
+</div>
   </div>
   </div>
   </div>
@@ -78,6 +81,14 @@ for(i=0; i<cards.length; i++ ){
 document.write(`     
     </div>
 </div>`)
+
+// Add to cart WORK
+function atc(){
+    let carddata = cards.value
+    alert("Product added to cart...")
+
+    confirm(`Would you order ${carddata} now ?`)
+}
 
 // Account Work
 let username=localStorage.getItem("username")

@@ -37,7 +37,7 @@ else{
 
         alert(`Registered as ` + Regname)
 
-        window.location.href="index.html"
+        window.location.href="main.html"
 }
 
             }
@@ -47,7 +47,7 @@ function visitsite(){
     localStorage.setItem("username" , "Guest")
     localStorage.setItem("usermail" , "No Email")
 
-    window.location.href="index.html"
+    window.location.href="main.html"
 }
 
 

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Background color */
+        body{
+            background-color: black;
+        }
+        /* card border */
+        .card{
+            border: 10px solid black;
+            border-radius: 25px;
+            transition: transform 0.6s ease-in-out;
+        }
+        .card:hover{
+          transform: scale(1.04 , 1.04);
+        }
+        /* Image border */
+        .crdimg{
+            border: 5px solid white;
+              transition: transform 0.5s ease-in-out;
+        }
+        .crdimg:hover{
+            transform: translateY(-5px) scale(1.02 , 1.02);
+            
+        }
+        /* Font family : Card-tile */
+        .card-title{
+            font-family: Times New Roman;
+            transition: transform 0.4s ease-in-out,
+             font-weight 0.3s ease-in-out 0.3s;
+        }
+        .card-title:hover{
+            transform: scale(1.02 , 1.02);
+            font-weight: bold;
+        }
+        /* Font family : Card-text */
+        .card-text{
+            font-family: Georgia;
+        }
+
+         nav{
+        background-color:grey;
+    }
+    .brandname{
+        color:white;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .box{
+      border: 2px solid white;
+    }
+    .gapbox{
+      border: 2px solid black;
+    }
+   .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+#Video {
+  max-width: 90%;
+  height: auto;
+  border:3px solid white;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.infobtn{
+  padding: 16px;
+   border-radius: 10px; 
+}
+#webvideo{
+  max-height: 100%;
+  max-width :100%;
+  border: 2px solid white;
+  transition: transform 0.5s ease-in-out;
+}
+#webvideo:hover{
+  transform: translateX(-10px) scale(1.09 , 1.09);
+}
+.videocard{
+  transition: transform 0.5s ease-in-out;
+}
+.videocard:hover{
+  transform: scale(1.02 , 1.02);
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar start -->
+<nav class="navbar navbar fixed-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand ms-4" href="#">
+      <img src="pics/Fariz digital showroom logo.png" alt="Bootstrap" width="100" height="80">
+       <!-- Brand name -->
+    <span class="navbar-brand mb-0 ms-4 h1 brandname">Fariz Digital Showroom</span>
+    </a>
+   
+   <div class="">
+     <!-- account tab (offcanvas) left -->
+ <button class="btn btn-close-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-regular fa-circle-user"></i></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Your Account</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h4 id="uname"></h4>
+        <h6 id="umail"></h6>
+  </div>
+</div>
+    <!-- pages tab (Offcanvas) right -->
+    <button class="navbar-toggler me-3 btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body bg-dark">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Search bar -->
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+   </div>
+  </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Gap start -->
+ <div class="container"><div class="gapbox mt-5"><h2>Just for Space</h2><br></div></div>
+<!-- Gap end -->
+
+<!-- Banner start -->
+ <div class="container-fluid">
+  <div class="box">
+  <div class="row mt-3">
+<div class="col-md-6"><h1 class="mt-5 ms-5" style="color: white; font-family:Times new roman;">-- Welcome to </h1>
+  <br><h2 class="ms-5"  style="color: white; font-family:Times new roman;">--- Fariz Digital Studio 🚘 ---</h2>
+  <h5 class="mb-3 ms-5"  style="color: white; font-family:Georgia; font-style: italic;">---- Digital Garage of Dreams ---</h5>
+  <br><button type="button" href="about.html" class="btn btn-outline-light infobtn ms-5">You want to know about us more?<br><h5>--- Just click here...👍 ---</h5></button></div>
+<div class="col-md-6 text-center">
+  <div class="video">
+    <video autoplay muted loop playsinline id="Video">
+      <source src="pics/banner drifting car video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+ </div>
+  </div>
+ </div>
+<!-- Banner end -->
+
+<!-- Videos work start -->
+<!-- ROW 1 -->
+ <div class="container-fluid">
+   <div class="row mt-5">
+  <!-- card 1 -->
+    <div class="col-md-4">
+
+      <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Drifting 👌</h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Slide wild, smoke flies high. Nail the angle, rule the slide</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- card 2 -->
+    <div class="col-md-4">
+
+        <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Racing drift cut 👌
+
+
+        </h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Drift sharp, clip the apex. Speed slices, corners vanish</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+<!-- card 3 -->
+  <div class="col-md-4">
+        <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Break burst 👌</h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Slam brakes, rear snaps loose.
+Burst in, carve that turn</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+ </div>
+
+ <!-- ROW 2 -->
+ <div class="container-fluid">
+   <div class="row mt-5">
+  <!-- card 1 -->
+    <div class="col-md-4">
+
+      <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Road drive 👌</h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Cruise smooth, road owns you.
+Wind rush, pure escape flow</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- card 2 -->
+    <div class="col-md-4">
+
+        <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Round drift 👌</h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Spin donuts, tires blaze hot.
+Tight circles, grip gone wild</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+<!-- card 3 -->
+  <div class="col-md-4">
+        <div class="card videocard mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <video autoplay muted loop playsinline id="webvideo">
+      <source src="pics/car video 6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Accelerating 👌</h5>
+        <p class="card-text"></p>
+        <p class="card-text" style="font-style: italic;"><small class="text-body-secondary">Mash pedal, rocket launch vibe.
+Grip the wheel, power surge hits</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+ </div>
+
+<!-- Videos work end -->
+
+  
+
+<script src="main.js">
+</script>
+
+
+ <!-- footer start -->
+
+<section class="">
+  <hr style="color: white;">
+  <footer class="bg-body-tertiary">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: white;" >Footer Content</h5>
+
+          <p style="color: white;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase" style="color: white;">Links</h5>
+
+          <ul class="list-unstyled mb-0" >
+            <li>
+              <a href="#!" class="text-body">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0"  style="color: white;">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-body">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <hr style="color: white;">
+</section>
+
+   <!-- footer end -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

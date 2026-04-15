@@ -1,11 +1,11 @@
 let cards=[
 {
     id:1,
-    img1:"pics/Gordon murray 01.jpg",
-    img2:"pics/gordon murray 2.jpg",
-    img3:"pics/Gordon murray 3.jpg",
-    img4:"pics/Gordon murray 4.jpg",
-    img5:"pics/Gordon murray 5.jpg",
+    img1:"../pics/Gordon murray 01.jpg",
+    img2:"../pics/gordon murray 2.jpg",
+    img3:"../pics/Gordon murray 3.jpg",
+    img4:"../pics/Gordon murray 4.jpg",
+    img5:"../pics/Gordon murray 5.jpg",
     name:"Gordon Murray T.33",
     des:`F1 legend Gordon Murray's street-legal track weapon. Cosworth-built V12 revs 
     to 11,000 RPM with a soundtrack like a symphony orchestra on steroids. Bare carbon tub + manual 
@@ -17,11 +17,11 @@ let cards=[
 },
 {
    id:2,
-     img1:"pics/Ferrari 296 GTB 01.jpg",
-    img2:"pics/ferrari 2.jpg",
-    img3:"pics/ferrari 3.jpg",
-    img4:"pics/ferrari 4.jpg",
-    img5:"pics/ferrari 5.jpg",
+     img1:"../pics/Ferrari 296 GTB 01.jpg",
+    img2:"../pics/ferrari 2.jpg",
+    img3:"../pics/ferrari 3.jpg",
+    img4:"../pics/ferrari 4.jpg",
+    img5:"../pics/ferrari 5.jpg",
     name:"Ferrari 296 GTB",
     des:`Ferrari's mid-engine masterpiece combines F1-derived hybrid tech with razor-sharp handling. 
     The 2.9L V6 plus electric motor delivers supercar thrills in a compact,
@@ -33,11 +33,11 @@ let cards=[
 },
 {
    id:3,
-    img1:"pics/Mclaren 01.jpg",
-    img2:"pics/mclaren 2.jpg",
-    img3:"pics/mclaren 3.jpg",
-    img4:"pics/mclaren 4.jpg",
-    img5:"pics/mclaren 5.jpg",
+    img1:"../pics/Mclaren 01.jpg",
+    img2:"../pics/mclaren 2.jpg",
+    img3:"../pics/mclaren 3.jpg",
+    img4:"../pics/mclaren 4.jpg",
+    img5:"../pics/mclaren 5.jpg",
     name:"McLaren 750S",
     des:`McLaren's "most powerful series car" strips 100+ lbs off the 720S while boosting power. 
     Hydraulic suspension + active aero = glued-to-road grip. 
@@ -48,11 +48,11 @@ let cards=[
 },
 {
    id:4,
-     img1:"pics/porche 01.jpg",
-    img2:"pics/porche 2.jpg",
-    img3:"pics/porche 3.jpg",
-    img4:"pics/porche 4.jpg",
-    img5:"pics/porche 5.jpg",
+     img1:"../pics/porche 01.jpg",
+    img2:"../pics/porche 2.jpg",
+    img3:"../pics/porche 3.jpg",
+    img4:"../pics/porche 4.jpg",
+    img5:"../pics/porche 5.jpg",
     name:"Porsche 911 GT3 RS",
     des:`Track weapon disguised as road car. Massive rear wing generates 860 lbs downforce at speed.
      No hybrid nonsense—just pure,
@@ -63,11 +63,11 @@ let cards=[
 },
 {
    id:5,
-     img1:"pics/lamborghini 01.jpg",
-    img2:"pics/lamborghini 1.jpg",
-    img3:"pics/lamborghini 3.jpg",
-    img4:"pics/lamborghini 4.jpg",
-    img5:"pics/lamborghini 5.jpg",
+     img1:"../pics/lamborghini 01.jpg",
+    img2:"../pics/lamborghini 1.jpg",
+    img3:"../pics/lamborghini 3.jpg",
+    img4:"../pics/lamborghini 4.jpg",
+    img5:"../pics/lamborghini 5.jpg",
     name:"Lamborghini Huracán Successor (Temerario)",
     des:`Lamborghini's V10 era ends with hybrid V8 fury.
      All-wheel drive + scissor doors + fighter-jet styling.
@@ -78,11 +78,11 @@ let cards=[
 },
 {
    id:6,
-    img1:"pics/Aston martin 01.jpg",
-    img2:"pics/aston martin 2.jpg",
-    img3:"pics/aston martin 3.jpg",
-    img4:"pics/aston martin 4.jpg",
-    img5:"pics/aston martin 5.jpg",
+    img1:"../pics/Aston martin 01.jpg",
+    img2:"../pics/aston martin 2.jpg",
+    img3:"../pics/aston martin 3.jpg",
+    img4:"../pics/aston martin 4.jpg",
+    img5:"../pics/aston martin 5.jpg",
     name:"Aston Martin DB12 AMR",
     des:`James Bond's new weapon. Longest DB chassis ever + most powerful Aston V12. 
     GT elegance meets supercar savagery—luxury interior, brutal acceleration.` ,
@@ -92,11 +92,11 @@ let cards=[
 },
 {
    id:7,
-    img1:"pics/chevrolet 01.jpg",
-    img2:"pics/chevrolet 2.jpg",
-    img3:"pics/chevrolet 3.jpg",
-    img4:"pics/chevrolet 4.jpg",
-    img5:"pics/chevrolet 5.jpg",
+    img1:"../pics/chevrolet 01.jpg",
+    img2:"../pics/chevrolet 2.jpg",
+    img3:"../pics/chevrolet 3.jpg",
+    img4:"../pics/chevrolet 4.jpg",
+    img5:"../pics/chevrolet 5.jpg",
     name:"Chevrolet Corvette ZR1",
     des:`America's supercar king hits hypercar power levels. Massive supercharger whine + dragstrip dominance. 
     Sub-$200K price makes it the performance bargain of the decade—triple the power of a 
@@ -107,11 +107,11 @@ let cards=[
 },
 {
    id:8,
-    img1:"pics/mercedes 01.jpg",
-    img2:"pics/mercedes 2.jpg",
-    img3:"pics/mercedes 3.jpg",
-    img4:"pics/mercedes 4.jpg",
-    img5:"pics/mercedes 5.jpg",
+    img1:"../pics/mercedes 01.jpg",
+    img2:"../pics/mercedes 2.jpg",
+    img3:"../pics/mercedes 3.jpg",
+    img4:"../pics/mercedes 4.jpg",
+    img5:"../pics/mercedes 5.jpg",
     name:"Mercedes-AMG GT 63 S E Performance",
     des:`Pinnacle of German engineering fury. Formula 1-derived hybrid tech + 4MATIC+ all-wheel grip. 
     GT3 race car DNA meets luxury grand tourer—can lap Nürburgring then do grocery run without breaking 
@@ -122,11 +122,11 @@ let cards=[
 },
 {
    id:9,
-    img1:"pics/mc20 01.jpg",
-    img2:"pics/mc20 2.jpg",
-    img3:"pics/mc20 3.jpg",
-    img4:"pics/mc20 4.jpg",
-    img5:"pics/mc20 5.jpg",
+    img1:"../pics/mc20 01.jpg",
+    img2:"../pics/mc20 2.jpg",
+    img3:"../pics/mc20 3.jpg",
+    img4:"../pics/mc20 4.jpg",
+    img5:"../pics/mc20 5.jpg",
     name:"Maserati MC20",
     des:`Italian opera in carbon fiber form. F1-derived V6 with pre-chamber ignition 
     (race tech trickled down). Butterfly doors + perfect 50/50 weight distribution = surgical handling.

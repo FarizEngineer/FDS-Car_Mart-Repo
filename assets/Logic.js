@@ -47,7 +47,35 @@ function visitsite(){
     localStorage.setItem("username" , "Guest")
     localStorage.setItem("usermail" , "No Email")
 
-    window.location.href="main.html"
+    window.location.href="../pages/login.html"
 }
 
+function log(){
+    let logmail=document.getElementById("logmail").value
+    let logpass=document.getElementById("logpass").value
+
+    if(logmail=="" && logpass==""){
+        alert(`Pls fill out all fields...😊`)
+    }
+    else if(logmail==""){
+        document.getElementById("logmailvalid").innerText="Pls, enter valid email here ☺️"
+    }
+    else if(logmail==""){
+        document.getElementById("logpassvalid").innerText="Pls, enter your correct password here ☺️"
+    }
+    else{
+    localStorage.setItem(`loginmail` , logmail);
+    localStorage.setItem(`userloginpassword` , logpass);
+
+      // Clear inputs
+        document.getElementById("logmail").value = "";
+        document.getElementById("logpass").value = "";
+        
+
+        alert(`logined as ` + logmail)
+
+        window.location.href="main.html"
+}
+
+}
 

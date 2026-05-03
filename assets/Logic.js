@@ -10,15 +10,20 @@ if(Regname == "" && Regmail=="" && Regpass=="" && Regconpass==""){
 }
 else if(Regname == ""){
     document.getElementById("namevalid").innerText="Pls, enter your name here ☺️"
+    if(Regname != ""){ document.getElementById("namevalid").innerText=""}
 }
 else if(Regmail == ""){
+   
     document.getElementById("emailvalid").innerText="Pls, enter your valid email address here ☺️"
+    if(Regmail != ""){ document.getElementById("emailvalid").innerText=""}
 }
 else if(Regpass == ""){
     document.getElementById("passvalid").innerText="Pls, enter your correct password here ☺️"
+    if(Regpass != ""){ document.getElementById("passvalid").innerText=""}
 }
 else if(Regconpass == ""){
     document.getElementById("conpassvalid").innerText="Pls, Confirm your correct password here ☺️"
+    if(Regconpass != ""){ document.getElementById("conpassvalid").innerText=""}
 }
 else if(Regpass != Regconpass){
     alert(`Your password does'nt match...!`)
@@ -37,7 +42,7 @@ else{
 
         alert(`Registered as ` + Regname)
 
-        window.location.href="main.html"
+        window.location.href="login.html"
 }
 
             }
@@ -50,6 +55,7 @@ function visitsite(){
     window.location.href="../pages/login.html"
 }
 
+// Login Work
 function log(){
     let logmail=document.getElementById("logmail").value
     let logpass=document.getElementById("logpass").value
@@ -58,10 +64,10 @@ function log(){
         alert(`Pls fill out all fields...😊`)
     }
     else if(logmail==""){
-        document.getElementById("logmailvalid").innerText="Pls, enter valid email here ☺️"
+        document.getElementById("mailvalid").innerText="Pls, enter valid email here ☺️"
     }
-    else if(logmail==""){
-        document.getElementById("logpassvalid").innerText="Pls, enter your correct password here ☺️"
+    else if(logpass==""){
+        document.getElementById("passvalid").innerText="Pls, enter your correct password here ☺️"
     }
     else{
     localStorage.setItem(`loginmail` , logmail);
@@ -78,4 +84,5 @@ function log(){
 }
 
 }
+
 

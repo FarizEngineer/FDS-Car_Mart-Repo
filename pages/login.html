@@ -12,17 +12,17 @@
 
         <div class="row text-center mt-4"><div class="col-md-6 offset-3"><h1>Login Page</h1></div></div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logname" type="text" placeholder="Write your name here..." oninput="loginname()"><p id="namevalid" style="color: red;"></p></div>
+            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logname" type="text" placeholder="Write your name here..." oninput="loginname()"  required><p id="namevalid" style="color: red;"></p></div>
         </div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logmail" type="text" placeholder="Write your mail here..."  oninput="loginmail()"><p id="mailvalid" style="color: red;"></p></div>
+            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logmail" type="text" placeholder="Write your mail here..."  oninput="loginmail()" required><p id="mailvalid" style="color: red;"></p></div>
         </div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logpass" type="password" placeholder="Write your password here..." oninput="loginpass()"><p id="passvalid" style="color: red;"></p></div>
+            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logpass" type="password" placeholder="Write your password here..." oninput="loginpass()" required><p id="passvalid" style="color: red;"></p></div>
         </div>
 
         </form>
-        <button class="btn btn-outline-success mt-4" onclick="login()">Login now</button>
+        <button class="btn btn-outline-success mt-4" onclick="log()">Login now</button>
     </div>
   
   

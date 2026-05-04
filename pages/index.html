@@ -19,6 +19,19 @@
    .sign{
     border: 2px solid white;
    }
+   /* inputs */
+   #regname{
+    border-radius: 6px;
+   }
+   #regmail{
+    border-radius: 6px;
+   }
+   #regpass{
+    border-radius: 6px;
+   }
+   #regconfirm{
+    border-radius: 6px;
+   }
 </style>
 </head>
 <body>
@@ -31,12 +44,12 @@
     <div class="sign text-center mt-3">
                 <div class="row mt-3"><h2 style="color: gray;">Registration form</h2></div>
                 <div class="row mt-3">
-                    <div class="col-md-6"><label for="name"  style="color: gray;">Name :</label><input type="text" id="regname" placeholder="Enter your full name..." ><p style="color: red;" id="namevalid"></p></div>
-                    <div class="col-md-6"><label for="email" style="color: gray;">Email :</label><input type="text" id="regmail" placeholder="Enter your valid email..."><p style="color: red;" id="emailvalid"></p></div>
+                    <div class="col-md-6"><label for="name"  style="color: gray;">Name : |</label><input type="text" id="regname" placeholder="Enter your full name..." required><p style="color: red;" id="namevalid"></p></div>
+                    <div class="col-md-6"><label for="email" style="color: gray;">Email : |</label><input type="text" id="regmail" placeholder="Enter your valid email..." required><p style="color: red;" id="emailvalid"></p></div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-6"><label for="Password"  style="color: gray;">Password :</label><input type="password" id="regpass" placeholder="Enter your password..."><p style="color: red;" id="passvalid"></p></div>
-                    <div class="col-md-6"><label for="password" style="color: gray;">Confirm Password :</label><input type="password" id="regconfirm" placeholder="Confirm your password..."><p style="color: red;" id="conpassvalid"></p></div>
+                    <div class="col-md-6"><label for="Password"  style="color: gray;">Password : |</label><input type="password" id="regpass" placeholder="Enter your password..."  required><p style="color: red;" id="passvalid"></p></div>
+                    <div class="col-md-6"><label for="password" style="color: gray;">Confirm Password : |</label><input type="password" id="regconfirm" placeholder="Confirm your password..."  required><p style="color: red;" id="conpassvalid"></p></div>
                 </div>
                 <div class="row mt-4 mb-3">
                     <div class="col-md-12"> 

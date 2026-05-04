@@ -56,26 +56,82 @@ function visitsite(){
 }
 
 // Login Work
+function loginname(){
+         let logname = document.getElementById("logname").value
+        if(logname === ""){
+            document.getElementById("namevalid").innerText="pls, fillout this field..."
+        }
+        else{
+            document.getElementById("namevalid").innerText="";
+        }
+    }
+    function loginmail(){
+         let logmail = document.getElementById("logmail").value
+        if(logmail === ""){
+            document.getElementById("mailvalid").innerText="pls, fill out this field..."
+        }
+        else{
+            document.getElementById("mailvalid").innerText="";
+        }
+    }
+    function loginpass(){
+         let logpass = document.getElementById("logpass").value
+        if(logpass === ""){
+            document.getElementById("passvalid").innerText="pls, fill out this field..."
+        }
+        else{
+            document.getElementById("passvalid").innerText="";
+        }
+    }
+
 function log(){
+    let logname = document.getElementById("logname").value
     let logmail=document.getElementById("logmail").value
     let logpass=document.getElementById("logpass").value
+    // ...
+let regname = localStorage.getItem("username" )
+let regmail = localStorage.getItem("usermail" )
+let regpass = localStorage.getItem("userconfirmedpassword"  )
 
-    if(logmail=="" && logpass==""){
+    if(logmail==="" && logpass==="" && logname===""){
         alert(`Pls fill out all fields...😊`)
     }
+    else if(logname==""){
+document.getElementById("namevalid").innerText="pls, enter your correct name here...😊"
+    }
     else if(logmail==""){
-        document.getElementById("mailvalid").innerText="Pls, enter valid email here ☺️"
+        document.getElementById("mailvalid").innerText="Pls, enter valid email here...☺️"
     }
     else if(logpass==""){
-        document.getElementById("passvalid").innerText="Pls, enter your correct password here ☺️"
+        document.getElementById("passvalid").innerText="Pls, enter your correct password here...☺️"
     }
+
+
+        else if(logname != regname){
+            alert("Name doesnt match...😕")
+            document.getElementById("logname").value="";
+        }
+        else if(logmail != regmail){
+            alert("Email address doesnt match...😕")
+            document.getElementById("logmail").value = "";
+        }
+        else if(logpass != regpass){
+            alert("Password doesnt match...😕")
+            document.getElementById("logpass").value = "";
+        }
+
+
+
     else{
-    localStorage.setItem(`loginmail` , logmail);
-    localStorage.setItem(`userloginpassword` , logpass);
+    localStorage.setItem(`login_mail` , logmail);
+    localStorage.setItem(`userlogin_Password` , logpass);
+    localStorage.setItem(`userlogin_Name` , logname);
 
       // Clear inputs
         document.getElementById("logmail").value = "";
         document.getElementById("logpass").value = "";
+        document.getElementById("logname").value = "";
+        
         
 
         alert(`logined as ` + logmail)

@@ -5,24 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    /* inputss */
+    #logname{
+        border-color:white ;
+        border-bottom:3px solid grey ;
+        animation: in1 2s ease-in-out;
+    }
+    @keyframes in1 {
+        from{transform: translateX(-60px)}
+        to{transform:translateX(0px)}
+    }
+    #logmail{
+        border-color:white ;
+        border-bottom:3px solid grey ;
+         animation: in2 2s ease-in-out;
+    }
+      @keyframes in2 {
+        from{transform: translateX(60px)}
+        to{transform:translateX(0px)}
+    }
+    #logpass{
+        border-color:white ;
+        border-bottom:3px solid grey ;
+         animation: in3 2s ease-in-out;
+    }
+      @keyframes in3 {
+        from{transform: translateX(-60px)}
+        to{transform:translateX(0px)}
+    }
+    /* heading */
+#head{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    animation: headani 2s ease-in-out;
+}
+@keyframes headani {
+    from { transform: translateY(-22px)}
+    to {transform: translateY(0px)}
+}
+/* Button */
+.bnlog{
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    animation: buttonup 2s ease-in-out;
+}
+@keyframes buttonup{
+    from{transform: translateY(22px)}
+    to{transform: translateY(0px)}
+}
+</style>
+
 </head>
 <body>
     <div class="container text-center">
         <form>
 
-        <div class="row text-center mt-4"><div class="col-md-6 offset-3"><h1>Login Page</h1></div></div>
+        <div class="row text-center mt-4"><div class="col-md-12 "><h1 id="head">Login Page</h1></div></div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logname" type="text" placeholder="Write your name here..." oninput="loginname()"  required><p id="namevalid" style="color: red;"></p></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 mt-4"><input class="form-control" id="logname" type="text" placeholder="Write your name here..." oninput="loginname()"  required><p id="namevalid" style="color: red;"></p></div>
         </div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logmail" type="text" placeholder="Write your mail here..."  oninput="loginmail()" required><p id="mailvalid" style="color: red;"></p></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 mt-4"><input class="form-control" id="logmail" type="text" placeholder="Write your mail here..."  oninput="loginmail()" required><p id="mailvalid" style="color: red;"></p></div>
         </div>
         <div class="row text-center">
-            <div class="col-md-6 offset-3 mt-4"><input class="form-control" id="logpass" type="password" placeholder="Write your password here..." oninput="loginpass()" required><p id="passvalid" style="color: red;"></p></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 mt-4"><input class="form-control" id="logpass" type="password" placeholder="Write your password here..." oninput="loginpass()" required><p id="passvalid" style="color: red;"></p></div>
         </div>
 
         </form>
-        <button class="btn btn-outline-success mt-4" onclick="log()">Login now</button>
+        <button class="btn btn-outline-secondary mt-4 bnlog" onclick="log()">Login now</button>
     </div>
   
   

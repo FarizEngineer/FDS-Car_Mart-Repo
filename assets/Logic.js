@@ -52,7 +52,7 @@ function visitsite(){
     localStorage.setItem("username" , "Guest")
     localStorage.setItem("usermail" , "No Email")
 
-    window.location.href="../pages/login.html"
+    window.location.href="../pages/main.html"
 }
 
 // Login Work

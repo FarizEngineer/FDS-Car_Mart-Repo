@@ -68,8 +68,8 @@ for(i=0; i<cards.length; i++ ){
     <h5 class="card-title">${cards[i].name}</h5>
     <p class="card-text">${cards[i].des}</p>
     <div class="text-center">
-  <a href="det.html?id=${cards[i].id}" class="btn btn-outline-success me-5">Buy now</a>
-    <a onclick="atc()" class="btn btn-outline-info ms-5">Add to cart</a>
+  <a href="det.html?id=${cards[i].id}" class="btn btn-outline-success me-4">Buy now</a>
+    <a onclick="atc()" class="btn btn-outline-info ms-4">Add to cart</a>
 </div>
   </div>
   </div>
@@ -84,10 +84,9 @@ document.write(`
 
 // Add to cart WORK
 function atc(){
-    let carddata = cards.value
     alert("Product added to cart...")
 
-    confirm(`Would you order ${carddata} now ?`)
+    confirm(`Would you order this Car now ?`)
 }
 
 // Account Work
@@ -96,4 +95,3 @@ let usermail=localStorage.getItem("usermail")
 
 document.getElementById(`uname`).innerHTML=username
 document.getElementById(`umail`).innerHTML=usermail
-

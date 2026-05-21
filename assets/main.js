@@ -95,3 +95,4 @@ let usermail=localStorage.getItem("usermail")
 
 document.getElementById(`uname`).innerHTML=username
 document.getElementById(`umail`).innerHTML=usermail
+

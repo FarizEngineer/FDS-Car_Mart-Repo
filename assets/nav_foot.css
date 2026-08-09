@@ -1,0 +1,10 @@
+.navbtn{
+    color: white;
+    border-bottom:2px solid transparent;
+ transition: transform 0.4s ease-in-out,   border-color 0.7s ease-in-out ;
+}
+.navbtn:hover{
+transform: translateX(5px) scale(1.01, 1.03);
+border-bottom-color: white;
+   color: gold;
+}
